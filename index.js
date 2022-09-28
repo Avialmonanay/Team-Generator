@@ -157,7 +157,7 @@ inquirer
           var school = internInfo.school
           var addUser = internInfo.additionalUser
   
-          const internHTML = intern.InternHTML(userName, id, email, school)
+          const internHTML = intern.internHTML(userName, id, email, school)
           console.log(internHTML)
           // appendToHTML(managerHTML)
           newUserCheck(addUser)
@@ -189,7 +189,7 @@ inquirer
             {
               type: 'input',
               message: 'What is the users phone #?',
-              name: 'school',
+              name: 'phone',
             },
             {
               type: 'checkbox',
@@ -201,13 +201,14 @@ inquirer
         .then((otherInfo) => {
           const other = new Other()
           var userName = otherInfo.userName
-          var role = internInfo.userRole
+          var role = otherInfo.userRole
           var id = otherInfo.Identification
           var email = otherInfo.email
-          var addUser = internInfo.additionalUser
+          var phone = otherInfo.phone
+          var addUser = otherInfo.additionalUser
   
           const otherHTML = other.otherHTML(userName, role, id, email, phone)
-          console.log(internHTML)
+          console.log(otherHTML)
           // appendToHTML(managerHTML)
           newUserCheck(addUser)
       })
