@@ -5,6 +5,8 @@ const Intern = require('./Classes/Intern')
 const Other = require('./Classes/Other')
 const Engineer = require('./Classes/Engineer')
 
+let userCount = 0
+
 inquirer
   .prompt([
     {
@@ -49,7 +51,9 @@ inquirer
     })
 
     var newUserCheck = (addUser) => {
-      if (addUser == "Yes") {
+      userCount++
+      if (userCount <= 12 && addUser == "Yes") {
+        console.log(userCount)
         inquirer
         .prompt([
           {
@@ -63,6 +67,9 @@ inquirer
           var userType = userCheck.userType
           newTeamMember(userType)
         })
+    }
+    else {
+      console.log("Max Users Reached")
     }
   }
 
