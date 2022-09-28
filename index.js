@@ -1,8 +1,8 @@
 // const fs = require('fs')
 const inquirer = require('inquirer');
 const Manager = require('./Classes/Manager');
-// const Intern = require('./lib/classes')
-// const Employee = require('./lib/classes')
+const Intern = require('./Classes/Intern')
+const Other = require('./Classes/Other')
 const Engineer = require('./Classes/Engineer')
 
 inquirer
@@ -168,13 +168,13 @@ inquirer
         .prompt([
           {
             type: 'input',
-            message: 'What is the Interns Name',
+            message: 'What is the Users Name',
             name: 'userName',
           },
           {
             type: 'input',
             message: 'What is the Users Role',
-            name: 'userName',
+            name: 'userRole',
           },
           {
             type: 'input',
@@ -188,7 +188,7 @@ inquirer
             },
             {
               type: 'input',
-              message: 'What school does the user attend?',
+              message: 'What is the users phone #?',
               name: 'school',
             },
             {
@@ -198,15 +198,15 @@ inquirer
               name: 'additionalUser',
             },
         ])
-        .then((internInfo) => {
-          const intern = new Intern()
-          var userName = internInfo.userName
-          var id = internInfo.Identification
-          var email = internInfo.email
-          var school = internInfo.school
+        .then((otherInfo) => {
+          const other = new Other()
+          var userName = otherInfo.userName
+          var role = internInfo.userRole
+          var id = otherInfo.Identification
+          var email = otherInfo.email
           var addUser = internInfo.additionalUser
   
-          const internHTML = intern.InternHTML(userName, id, email, school)
+          const otherHTML = other.otherHTML(userName, role, id, email, phone)
           console.log(internHTML)
           // appendToHTML(managerHTML)
           newUserCheck(addUser)

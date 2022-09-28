@@ -1,8 +1,7 @@
-class Intern {}
+class Other {}
 
 
-Intern.prototype.internHTML = function (user, id, email, school) {
-    var role = 'Intern'
+Other.prototype.otherHTML = function (user, role, id, email, phone) {
     return `<div class="card">
     <div class="cardHeader">
         <h3>${user}</h3>
@@ -11,10 +10,9 @@ Intern.prototype.internHTML = function (user, id, email, school) {
     <div class="cardBody">
         <div class="cardInfo">ID: ${id}</div>
         <div class="cardInfo">Email: ${email}</div>
-        <div class="cardInfo">School: ${school}</div>
+        <div class="cardInfo">Phone: ${phone}</div>
     </div>
 </div>`
 }
 
-
-module.exports = Intern
+module.exports = Other
