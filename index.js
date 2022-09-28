@@ -37,6 +37,7 @@ inquirer
       },
     ])
     .then((managerInfo) => {
+        userCount++
         const manager = new Manager()
         var userName = managerInfo.manager
         var id = managerInfo.Identification
@@ -51,7 +52,6 @@ inquirer
     })
 
     var newUserCheck = (addUser) => {
-      userCount++
       if (userCount <= 12 && addUser == "Yes") {
         console.log(userCount)
         inquirer
@@ -112,6 +112,7 @@ inquirer
             },
         ])
         .then((engineerInfo) => {
+          userCount++
           const engineer = new Engineer()
           var userName = engineerInfo.userName
           var id = engineerInfo.Identification
@@ -157,6 +158,7 @@ inquirer
             },
         ])
         .then((internInfo) => {
+          userCount++
           const intern = new Intern()
           var userName = internInfo.userName
           var id = internInfo.Identification
@@ -206,6 +208,7 @@ inquirer
             },
         ])
         .then((otherInfo) => {
+          userCount++
           const other = new Other()
           var userName = otherInfo.userName
           var role = otherInfo.userRole
