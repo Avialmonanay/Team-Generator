@@ -238,8 +238,6 @@ var newTeamMember = (userType) => {
 function createFile(fileName, managerHTML) {
   fs.writeFile(fileName, managerHTML, (err) => {
     err
-  ? console.error(err)
-  : console.log(`index.html created in the "Team" folder, Manager added`)
   });
 }
 
@@ -256,7 +254,5 @@ function appendFile(appendHTML) {
 
   fs.appendFile(`./Team/index.html`, appendHTML, (err) => 
   err
-  ? console.error(err)
-  : console.log(`Team Member added to index.HTML`)
   );
 }
