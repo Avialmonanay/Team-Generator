@@ -22,6 +22,9 @@ main {
 
 .container {
     width: 100%;
+    justify-content: center;
+    padding-left:150px;
+    padding-top: 50px;
     
 }
 
@@ -65,7 +68,8 @@ main {
 
 .cardInfo:hover{
     background-color: salmon;
-    opacity: .5;
+    opacity: .25;
+    color: black;
 }
 
 
