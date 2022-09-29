@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+}
+html{
+    background-color: lightcyan;
+}
+body {
+    font-family: Arial;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    /* Forces elements to the next line if they don't fit */
+    flex-wrap: wrap;
+    min-width: 100vw;
+    background-color: lightcyan;
+
+  }
+
+
+
+.container {
+    width: 100%;
+    
+}
+
+.card {
+    display: flex;
+    margin: auto;
+    width: 33%;
+    min-width: 300px;
+    border: none;
+    padding: 25px;
+    background-color: lightcyan;
+    min-height: 300px;
+}
+
+.cardHeader {
+    padding-left: 5%;
+    padding-top: 3%;
+    color: white;
+    background-color: rgb(0, 119, 255);
+    border-radius: 5px;
+    min-width: 300px;
+    max-width: 400px;
+    min-height: 50px;
+}
+
+.cardBody {
+    padding: 20px 30px;
+    background-color: rgb(247, 247, 247);
+    min-width: 300px;
+    max-width: 400px;
+    min-height: 200px;
+}
+
+.cardInfo {
+    padding: 8px;
+    height: 40px;
+    border: 1px;
+    border-style: solid;
+    background-color: white;
+}
+
+.cardInfo:hover{
+    background-color: salmon;
+    opacity: .5;
+}
+
+
+#pHeader {
+    background-color: salmon;
+    height: 65px;
+    text-align: center;
+}
