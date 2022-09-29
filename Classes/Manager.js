@@ -27,8 +27,8 @@ Manager.prototype.managerHTML = function (user, id, email, number) {
         </div>
         <div class="cardBody">
             <div class="cardInfo">ID: ${id}</div>
-            <div class="cardInfo">Email: ${email}</div>
-            <div class="cardInfo">Number: ${number}</div>
+            <div class="cardInfo">Email:<a href="mailto:${email}">${email}</a></div>
+            <div class="cardInfo">Number:<a href="tel:+${number}">${number}</a></div>
         </div>
     </div>`
 }

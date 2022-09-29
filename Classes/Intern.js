@@ -10,7 +10,7 @@ Intern.prototype.internHTML = function (user, id, email, school) {
     </div>
     <div class="cardBody">
         <div class="cardInfo">ID: ${id}</div>
-        <div class="cardInfo">Email: ${email}</div>
+        <div class="cardInfo">Email:<a href="mailto:${email}">${email}</a></div>
         <div class="cardInfo">School: ${school}</div>
     </div>
 </div>`

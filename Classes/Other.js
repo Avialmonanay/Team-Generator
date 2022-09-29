@@ -9,8 +9,8 @@ Other.prototype.otherHTML = function (user, role, id, email, phone) {
     </div>
     <div class="cardBody">
         <div class="cardInfo">ID: ${id}</div>
-        <div class="cardInfo">Email: ${email}</div>
-        <div class="cardInfo">Phone: ${phone}</div>
+        <div class="cardInfo">Email:<a href="mailto:${email}">${email}</a></div>
+        <div class="cardInfo">Number:<a href="tel:+${phone}">${phone}</a></div>
     </div>
 </div>`
 }

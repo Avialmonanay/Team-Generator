@@ -52,7 +52,7 @@ inquirer
   })
 
 var newUserCheck = (addUser) => {
-  if (userCount <= 12 && addUser == "Yes") {
+  if (userCount <= 16 && addUser == "Yes") {
     console.log(userCount)
     inquirer
       .prompt([
@@ -133,6 +133,7 @@ var newTeamMember = (userType) => {
 
         const engineerHTML = engineer.engineerHTML(userName, id, email, hubName, hubURL)
         console.log(engineerHTML)
+        appendFile(engineerHTML)
         newUserCheck(addUser)
 
       })
@@ -177,8 +178,7 @@ var newTeamMember = (userType) => {
         var addUser = internInfo.additionalUser
 
         const internHTML = intern.internHTML(userName, id, email, school)
-        console.log(internHTML)
-        // appendToHTML(managerHTML)
+        appendFile(internHTML)
         newUserCheck(addUser)
       })
   }
@@ -228,8 +228,7 @@ var newTeamMember = (userType) => {
         var addUser = otherInfo.additionalUser
 
         const otherHTML = other.otherHTML(userName, role, id, email, phone)
-        console.log(otherHTML)
-        // appendToHTML(managerHTML)
+        appendFile(otherHTML)
         newUserCheck(addUser)
       })
   }
@@ -246,7 +245,7 @@ function createFile(fileName, managerHTML) {
 
 function finishFile(closeHTML) {
 
-  fs.appendFile(`index.html`, closeHTML, (err) => 
+  fs.appendFile(`./Team/index.html`, closeHTML, (err) => 
   err
   ? console.error(err)
   : console.log(`index.html is complete`)
@@ -255,7 +254,7 @@ function finishFile(closeHTML) {
 
 function appendFile(appendHTML) {
 
-  fs.appendFile(`index.html`, appendHTML, (err) => 
+  fs.appendFile(`./Team/index.html`, appendHTML, (err) => 
   err
   ? console.error(err)
   : console.log(`Team Member added to index.HTML`)

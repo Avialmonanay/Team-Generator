@@ -10,8 +10,8 @@ class Engineer {}
             </div>
             <div class="cardBody">
                 <div class="cardInfo">ID: ${id}</div>
-                <div class="cardInfo">Email: ${email}</div>
-                <div class="cardInfo">Github: ${hubName}</div>
+                <div class="cardInfo">Email:<a href="mailto:${email}">${email}</a></div>
+                <div class="cardInfo">Github:<a href=${hubURL}>${hubName}</a></div>
             </div>
         </div>`
     }
