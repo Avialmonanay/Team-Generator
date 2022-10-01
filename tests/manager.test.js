@@ -2,14 +2,16 @@ const Manager = require("../Classes/Manager");
 
 describe("Manager", () => {
     it("should call to the Manager Class and return a pupulated HTML", () => {
+
+        //dumby data to be sent to the Manager class
       const user = "John";
       const id = "1";
       const email = "john@john.com";
       const number = "5555555555";
       const role = "Manager";
-
+        // call to the class
       const result = new Manager().managerHTML(user, id, email, number);
-
+        //expected results from the call
         const expected =`<!DOCTYPE html>
         <html lang="en">
         <head>
@@ -34,7 +36,7 @@ describe("Manager", () => {
                     <div class="cardInfo">Number:<a href="tel:+${number}">${number}</a></div>
                 </div>
             </div>`
-
+        //compare expected with the result return data
       expect(result).toEqual(expected);
     });
   });
