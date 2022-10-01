@@ -12,6 +12,7 @@ This application was built to be able to dynamically create an HTML file with yo
 - [Contact](#questions)
 
 ## Screenshot
+![My Team](https://user-images.githubusercontent.com/108016215/193398549-2334f268-67bf-4717-882b-bbd06ef455fd.PNG)
 
 ## Installation
 Team Generator utilizes the NPM inquirer and jest  packages. In my code repository I have included a package.json file. Once you have cloned the code you can run {npm install -y} this will download all neccessary packages needed for the application.
