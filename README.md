@@ -41,7 +41,7 @@ Application uses Node.js and the npm inquirer package to ask the user questions 
 https://drive.google.com/file/d/1PJYJXfetRpDGw2F70l-7uMBzoQ7I1rDc/view
 
 ## Questions
-Github Username:[ Avialmonanay](https://github.com/Avialmonanay)
+Github Profile:[ Avialmonanay](https://github.com/Avialmonanay)
 
 If you have any additional questions please email me at rexxmadsen@gmail.com with the subject "Team Generator
 
