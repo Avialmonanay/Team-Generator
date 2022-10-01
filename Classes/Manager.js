@@ -1,6 +1,6 @@
 class Manager { }
 
-
+//manager class generates html header and manager card with dynamic links to their email and phone.
 Manager.prototype.managerHTML = function (user, id, email, number) {
     var role = 'Manager'
     return `<!DOCTYPE html>

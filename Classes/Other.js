@@ -1,6 +1,7 @@
 class Other {}
 
 
+//other class generates html with dynamic links to their email and phone.
 Other.prototype.otherHTML = function (user, role, id, email, phone) {
     return `<div class="card">
         <div class="cardHeader">

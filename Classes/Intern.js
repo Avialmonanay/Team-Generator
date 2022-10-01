@@ -1,6 +1,6 @@
 class Intern {}
 
-
+//Intern class generates html with dynamic links to their email
 Intern.prototype.internHTML = function (user, id, email, school) {
     var role = 'Intern'
     return `<div class="card">
