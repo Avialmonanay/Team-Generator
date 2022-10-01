@@ -1,3 +1,5 @@
+/* This css stylying is meant to be teamed up with the index.html that will generate in the "Teams" folder once the application has built the file. */
+
 * {
     box-sizing: border-box;
 }
@@ -19,7 +21,7 @@ main {
   }
 
 
-
+/* start classes */
 .container {
     width: 100%;
     justify-content: center;
@@ -73,6 +75,8 @@ main {
 }
 
 
+
+/* start ID's */
 #pHeader {
     background-color: salmon;
     height: 65px;
