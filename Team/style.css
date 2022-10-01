@@ -58,6 +58,9 @@ main {
     min-width: 300px;
     max-width: 400px;
     min-height: 200px;
+    border: 5px;
+    border-style: groove;
+    border-top: 0px;
 }
 
 .cardInfo {
