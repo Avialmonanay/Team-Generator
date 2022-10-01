@@ -252,13 +252,14 @@ var newTeamMember = (userType) => {
   }
 }
 
-
+//create file function takes in the managerHTML and creates and index.html inside of the Team folder of the repository
 function createFile(fileName, managerHTML) {
   fs.writeFile(fileName, managerHTML, (err) => {
     err
   });
 }
 
+//finishFile appends the closing HTML information onto the index.html
 function finishFile(closeHTML) {
 
   fs.appendFile(`./Team/index.html`, closeHTML, (err) => 
@@ -268,6 +269,7 @@ function finishFile(closeHTML) {
   );
 }
 
+//appendFile takes in the added users and appends them to the index.html
 function appendFile(appendHTML) {
 
   fs.appendFile(`./Team/index.html`, appendHTML, (err) => 
