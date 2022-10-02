@@ -43,7 +43,7 @@ https://drive.google.com/file/d/1PJYJXfetRpDGw2F70l-7uMBzoQ7I1rDc/view
 ## Questions
 Github Profile:[ Avialmonanay](https://github.com/Avialmonanay)
 
-If you have any additional questions please email me at rexxmadsen@gmail.com with the subject "Team Generator
+If you have any additional questions please email me at rexxmadsen@gmail.com with the subject "Team Generator"
 
 Repository: https://github.com/Avialmonanay/Read-Me-Generator
 
