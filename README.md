@@ -2,7 +2,7 @@
 This application was built to be able to dynamically create an HTML file with your team members. This page is easy to view and each team member has their own card containing their Name, Roll, Employee ID, Email, and depending on the user role choice there will be additional information that displays on the card. Each card will have links to emails, phone, and github profiles depending on user choice. Each link will take you to the appropriate application to contact them.  
 
 
-## Table of Contents (Optional)
+## Table of Contents
 
 - [Installation](#installation)
 - [Usage](#usage)
