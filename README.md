@@ -22,7 +22,7 @@ After the appropriate packages have been installed highlighted above. You will r
 
 Required fields for Engineer are "Name", "Employeer ID", "Email", "Github Profile Name", and "Github profile URL" This will allow you to quickly access the users profile and send them emails. 
 
-Required fields for "Intern" are "Name", "Employeer ID", "Email", and "School. 
+Required fields for "Intern" are "Name", "Employeer ID", "Email", and "School". 
 
 Required fields for "Other" are "Name", "Employeer ID", "Email", and "Phone Number". 
 
